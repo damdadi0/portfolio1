@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <!-- 강사수정 : position:fixed 형태의 왼쪽 gnb는 body의 직계 구조로 배치 -->
+    <div class="side_gnb">
+      <span>section1</span>
+      <span>section2</span>
+      <span>section3</span>
+      <span>section4</span>
+      <span>section5</span>
+    </div>
+    ​
+    <!-- 강사수정 : 물결은 가상테그로 적용하실 생각인가요? -->
+    <!-- 강사수정 : 텍스트입력 효과 적용을 위해서 기본 구조를 맞춰 보세요 -->
+    <!-- 강사수정 : 참고 https://codepen.io/jh3y/pen/gOeGmRN -->
+    <section class="sec1">
+      <div aria-hidden="true" class="reflective" data-splitting="">
+        <span>잔잔히 흐르는 물 같은</span>
+        <span>잔잔히 흐르는 물 같은</span>
+      </div>
+      <span class="sr-only">잔잔히 흐르는 물 같은</span>
+      <!-- <h1 class="effect">안녕하세요<br />잔잔히 흐르는 물 같은<br />디자이너 정다미입니다.</h1> -->
+    </section>
+    ​
+    <section class="sec2">
+      <!-- 강사수정 : 좌우 나뉘는 부분 wrapping 처리. .left .right 로 구분해 두었습니다. -->
+      <div class="left">
+        <div><img src="" alt="프로필이미지" /></div>
+        <div class="text1">
+          <h2>About</h2>
+          <p>
+            잔잔히 흐르는 물이 나중엔 커다란 바다가 되는 것 처럼 스스로
+            발전해나가는 디자이너가 되겠습니다.
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="text2">
+          <h2>Profile</h2>
+          <p>정다미</p>
+          <p>Jeong Da Mi</p>
+          <p>jeongdada09@gmail.com</p>
+          <p>010-9670-3250</p>
+        </div>
+        <div class="text3">
+          <h2>Education</h2>
+          <div>
+            <span>2023.01</span>
+            <p>
+              [과정평가형]웹디자인기능사(웹퍼블리셔, 프론트엔드) 취득과정
+              수료예정
+            </p>
+          </div>
+          <div>
+            <span>2022.02</span>
+            <p>서원대학교 시각디자인과 졸업</p>
+          </div>
+          <div>
+            <span>2018.02</span>
+            <p>대전신일여자고등학교 졸업</p>
+          </div>
+        </div>
+        <div class="text4">
+          <h2>Skills</h2>
+          <div class="icons_img">
+            <img src="./img/포토샵.png" alt="" />
+            <img src="./img/일러스트.png" alt="" />
+            <img src="./img/인디자인.png" alt="" />
+            <img src="./img/피그마.png" alt="" />
+            <img src="./img/html.png" alt="" />
+            <img src="./img/css.png" alt="" />
+            <img src="./img/js.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    ​
+    <section class="sec3">
+      <div class="title">
+        <p>01. project</p>
+        <img src="./img/물결1.png" alt="" />
+      </div>
+      <h2>TOPRESSO</h2>
+      <span> &#35;반응형 웹사이트</span>
+      <ul class="text">
+        <li>
+          <strong>사이트명</strong>
+          <p>topresso (토프레소)</p>
+        </li>
+        <li>
+          <strong>작업기간</strong>
+          <p>2주 (기획/디자인/코딩)</p>
+        </li>
+        <li>
+          <strong>컬러</strong>
+          <img src="./img/컬러1.png" alt="" />
+        </li>
+        <li>
+          <strong>토프레소 설명</strong>
+          <p>
+            토프레소의 웹 리뉴얼 사이트입니다. 브랜드 컬러인 블루와<br />
+            그레이를 이용하여 홈페이지의 가독성과 브랜드의<br />
+            여유와 편안한 이미지를 전달하기 위해 작업했습니다.
+          </p>
+        </li>
+      </ul>
+      <!--강사수정 버튼요소 묶어서 관리 -->
+      <div class="btns">
+        <button>process task</button>
+        <button>web prototype</button>
+        <button>github code</button>
+      </div>
+      <!-- 강사수정 : 이미지 블록 요소에 감싸서 관리 -->
+      <div class="mockup"><img src="" alt="목업이미지" /></div>
+    </section>
+    ​
+    <!-- 
+    강사수정 : 현재로서는 섹션에 max-width를 바로 적용하는 것이 좋겠습니다. 
+    물결 부분은 넓이는 100vw로 주로 중앙정렬로 맞추면 되겠구요.
+  --></body>
+</html>

@@ -1,0 +1,76 @@
+@charset 'utf-8';
+@import url(./my_reset.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #2c2c2c;
+  --main-c1: #2066ff;
+  --sub-c1: #6998ff;
+}
+
+.mw {
+  width: calc(100% - 4rem);
+  max-width: 1300px;
+  margin: auto;
+}
+
+.gnb {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.gnb span {
+  display: block;
+}
+
+.sec1 {
+  border: 1px solid red;
+  /* width: 100%; */
+  height: 100vh;
+  position: relative;
+}
+
+.sec1 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vh;
+  font-weight: bold;
+  text-align: center;
+}
+.sec1 img {
+  position: absolute;
+  bottom: 0%;
+}
+.sec .img2 {
+}
+
+.sec2 {
+  border: 1px solid blue;
+  height: 100vh;
+  padding: 5vh;
+  position: relative;
+}
+
+.sec2 .inner {
+  border: 1px solid tomato;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec2 h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.sec2 .left {
+  border: 1px solid green;
+}
