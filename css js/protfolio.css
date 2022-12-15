@@ -18,12 +18,23 @@
 
 .gnb {
   position: fixed;
-  right: 0;
+  right: 100px;
   top: 50%;
   transform: translateY(-50%);
 }
 .gnb span {
   display: block;
+  cursor: pointer;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.gnb span::after {
+  content: "";
+  border: 2px solid var(--main-c1);
+  margin-left: 15px;
+  /* width: 10px;
+  height: 20px; */
 }
 
 .sec1 {
@@ -45,8 +56,6 @@
 .sec1 img {
   position: absolute;
   bottom: 0%;
-}
-.sec .img2 {
 }
 
 .sec2 {
@@ -73,4 +82,223 @@
 
 .sec2 .left {
   border: 1px solid green;
+}
+
+/* sec3 */
+
+.sec3 {
+  border: 1px solid tomato;
+  height: 100vh;
+  position: relative;
+}
+
+.sec3 .inner {
+  border: 1px solid green;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec3 .left {
+  border: 1px solid blue;
+  display: block;
+}
+.sec3 .left .title {
+  padding-bottom: 20px;
+}
+.sec3 .left .title > * {
+  display: block;
+}
+
+.sec3 .left h2 {
+  font-size: 6vh;
+  font-weight: bold;
+}
+
+.sec3 .left .text {
+  margin: 40px 0;
+}
+.sec3 .left .text li {
+  display: flex;
+  margin-bottom: 5px;
+}
+.sec3 .left .text li:nth-of-type(4) {
+  /* border: 1px solid slateblue; */
+  margin-top: 30px;
+}
+
+.sec3 .left .text strong {
+  font-weight: bold;
+}
+.sec3 .left .text p {
+  margin-left: 40px;
+}
+
+.sec3 .left .text img {
+  margin-left: 70px;
+}
+
+.sec3 .left button {
+  color: var(--main-c1);
+  background-color: white;
+  border: 2px solid var(--main-c1);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+
+/* sec4 */
+
+.sec4 {
+  border: 1px solid tomato;
+  height: 100vh;
+  position: relative;
+}
+
+.sec4 .inner {
+  border: 1px solid green;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec4 .left {
+  border: 1px solid blue;
+  display: block;
+}
+.sec4 .left .title {
+  padding-bottom: 20px;
+}
+.sec4 .left .title > * {
+  display: block;
+}
+
+.sec4 .left h2 {
+  font-size: 6vh;
+  font-weight: bold;
+}
+
+.sec4 .left .text {
+  margin: 40px 0;
+}
+.sec4 .left .text li {
+  display: flex;
+  margin-bottom: 5px;
+}
+.sec4 .left .text li:nth-of-type(4) {
+  /* border: 1px solid slateblue; */
+  margin-top: 30px;
+}
+
+.sec4 .left .text strong {
+  font-weight: bold;
+}
+.sec4 .left .text p {
+  margin-left: 40px;
+}
+
+.sec4 .left .text img {
+  margin-left: 70px;
+}
+
+.sec4 .left button {
+  color: var(--main-c1);
+  background-color: white;
+  border: 2px solid var(--main-c1);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+
+/* sec5 */
+
+.sec5 {
+  border: 1px solid tomato;
+  height: 100vh;
+  position: relative;
+}
+
+.sec5 .inner {
+  border: 1px solid green;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sec5 .left {
+  border: 1px solid blue;
+  display: block;
+}
+.sec5 .left .title {
+  padding-bottom: 20px;
+}
+.sec5 .left .title > * {
+  display: block;
+}
+
+.sec5 .left h2 {
+  font-size: 6vh;
+  font-weight: bold;
+}
+
+.sec5 .left .text {
+  margin: 40px 0;
+}
+.sec5 .left .text li {
+  display: flex;
+  margin-bottom: 5px;
+}
+.sec5 .left .text li:nth-of-type(4) {
+  /* border: 1px solid slateblue; */
+  margin-top: 30px;
+}
+
+.sec5 .left .text strong {
+  font-weight: bold;
+}
+.sec5 .left .text p {
+  margin-left: 40px;
+}
+
+.sec5 .left .text img {
+  margin-left: 70px;
+}
+
+.sec5 .left button {
+  color: var(--main-c1);
+  background-color: white;
+  border: 2px solid var(--main-c1);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+
+/* sec6 */
+
+.sec6 {
+  border: 1px solid tomato;
+  height: 100vh;
+  position: relative;
+}
+
+.sec6 > div {
+  border: 1px solid slateblue;
+  position: absolute;
+  justify-items: center;
+}
+
+.sec6 .img {
+  bottom: 0%;
 }
