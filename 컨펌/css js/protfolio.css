@@ -9,6 +9,9 @@
   --main-c1: #2066ff;
   --sub-c1: #6998ff;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .mw {
   width: calc(100% - 4rem);
@@ -23,7 +26,7 @@
   transform: translateY(-50%);
   z-index: 999;
 }
-.gnb span {
+.gnb a {
   display: block;
   cursor: pointer;
   text-align: right;
@@ -31,12 +34,16 @@
   font-size: 0.7rem;
 }
 
-.gnb span::after {
+.gnb a::after {
   content: "";
-  border: 2px solid var(--main-c1);
+  border: 1px solid var(--main-c1);
   margin-left: 15px;
   /* width: 10px;
   height: 20px; */
+}
+.gnb a:hover::after,
+.gnb a.on::after {
+  border: 1px solid tomato;
 }
 
 /* sec1 */
@@ -366,7 +373,6 @@
 
 .sec5 .left .text img {
   margin-left: 70px;
-  height: 100%;
 }
 
 .sec5 .left button {
@@ -377,6 +383,11 @@
   padding: 0.5rem 1rem;
   margin-right: 1rem;
   cursor: pointer;
+}
+
+.sec5 .left ul li img {
+  /* border: 1px solid slateblue; */
+  height: 100%;
 }
 
 /* sec6 */
@@ -453,7 +464,9 @@
   font-weight: bold;
   padding-bottom: 10px;
 }
-
+.sec6 p {
+  /* margin-top: 15px; */
+}
 .sec6 img {
   /* border: 1px solid slateblue; */
   bottom: 0%;
