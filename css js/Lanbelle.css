@@ -171,6 +171,9 @@ body {
 .sec3 ul .style_2 p:nth-of-type(1) {
   font-weight: bold;
 }
+.sec3 ul .style_2 p:nth-of-type(2) {
+  font-weight: 500;
+}
 
 .sec3 ul .style_3 {
   padding: 20px 0;
