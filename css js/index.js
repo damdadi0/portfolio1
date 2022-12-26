@@ -45,15 +45,14 @@ window.addEventListener("scroll", function () {
     $topNav.classList.add("on");
   }
 
-  // 스크롤 적용 시 해당 섹션에 해당되는 a 요소에만 .on 적용되는 기능
   $elm.forEach(function (item, idx) {
-    let $navLink = document.querySelectorAll(".gnb span");
+    let $navLink = document.querySelectorAll(".gnb ");
     if (scrollTop >= item.offsetTop) {
-      $navLink.forEach(function (span) {
+      $navLink.forEach(function (a) {
         a.classList.remove("on");
       });
       document
-        .querySelector(`.gnb span:nth-of-type(${idx + 1})`)
+        .querySelector(`.gnb a:nth-of-type(${idx + 1})`)
         .classList.add("on");
     }
   });

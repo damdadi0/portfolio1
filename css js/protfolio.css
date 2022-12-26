@@ -571,6 +571,10 @@
 }
 
 @media (max-width: 1000px) {
+  .gnb {
+    right: 60px;
+  }
+
   span,
   p {
     font-size: 14px;
@@ -588,6 +592,10 @@
 }
 
 @media (max-width: 800px) {
+  .gnb {
+    right: 40px;
+  }
+
   .sec2 .left {
     border: 1px solid red;
     width: calc(100% - 4rem);
@@ -605,10 +613,23 @@
   }
 }
 
-@media (min-width: 500px) {
-  .sec3 .inner {
-    width: 100%;
+@media (min-width: 550px) {
+  /* span,
+  p {
+    font-size: 10px;
   }
+  .gnb {
+    right: 20px;
+  } */
+
+  .sec3 .left {
+    border: 1px solid orange;
+    width: calc(100% - 4rem);
+  }
+  .sec3 .left h2 {
+    font-size: 30px;
+  }
+
   .sec3 .right img {
     height: auto;
     width: 50vh;
