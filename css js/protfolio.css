@@ -208,7 +208,7 @@
 }
 
 .sec3 .inner {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   position: absolute;
   display: flex;
   width: 100%;
@@ -556,7 +556,11 @@
   } */
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
+  .gnb {
+    right: 50px;
+  }
+
   .sec2 .inner {
     flex-wrap: wrap;
     /* padding-bottom: 10rem; */
@@ -565,28 +569,13 @@
   .sec3 .inner {
     flex-wrap: wrap;
   }
-  .sec3 .right {
-    margin: 4rem 0;
-  }
 
   .sec4 .inner {
     flex-wrap: wrap;
   }
-  .sec4 .right {
-    margin: 4rem 0;
-  }
 
   .sec5 .inner {
     flex-wrap: wrap;
-  }
-  .sec5 .right {
-    margin: 4rem 0;
-  }
-}
-
-@media (max-width: 1000px) {
-  .gnb {
-    right: 50px;
   }
 
   span,
@@ -602,6 +591,73 @@
   }
   .sec2 .right img {
     /* height: 20px; */
+  }
+
+  .sec3 .inner {
+    padding-top: 0;
+  }
+
+  .sec3 .right img {
+    width: 400px;
+    padding-top: 2rem;
+  }
+
+  .sec3 .left .title {
+    padding: 15px;
+  }
+  .sec3 .left .text {
+    margin: 30px;
+  }
+  .sec3 .left button,
+  .sec3 .left a {
+    font-size: 12px;
+    padding: 9px 14px;
+    margin-right: 13px;
+  }
+
+  .sec4 .inner {
+    padding-top: 0;
+  }
+
+  .sec4 .right img {
+    width: 400px;
+    padding-top: 2rem;
+  }
+
+  .sec4 .left .title {
+    padding: 15px;
+  }
+  .sec4 .left .text {
+    margin: 30px;
+  }
+  .sec4 .left button,
+  .sec4 .left a {
+    font-size: 12px;
+    padding: 9px 14px;
+    margin-right: 13px;
+  }
+
+  .sec5 .inner {
+    padding-top: 0;
+  }
+
+  .sec5 .right img {
+    width: 400px;
+    padding-top: 2rem;
+  }
+  .sec5 .left {
+  }
+  .sec5 .left .title {
+    padding: 15px;
+  }
+  .sec5 .left .text {
+    margin: 30px;
+  }
+  .sec5 .left button,
+  .sec5 .left a {
+    font-size: 12px;
+    padding: 9px 14px;
+    margin-right: 13px;
   }
 }
 
@@ -703,7 +759,7 @@
   .sec3 .right img {
     height: auto;
     width: 250px;
-    padding-top: 0;
+    padding-top: 2rem;
   }
 
   .sec4 .left h2 {
@@ -729,7 +785,7 @@
   .sec4 .right img {
     height: auto;
     width: 250px;
-    padding-top: 0;
+    padding-top: 2rem;
   }
 
   .sec5 .left h2 {
@@ -749,7 +805,7 @@
   .sec5 .right img {
     height: auto;
     width: 250px;
-    padding-top: 0;
+    padding-top: 2rem;
   }
 
   .sec5 .left a,

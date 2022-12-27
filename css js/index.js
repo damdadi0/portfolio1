@@ -16,7 +16,7 @@ $elm.forEach(function (item, idx) {
         try {
           moveTop =
             window.pageYOffset +
-            elmSelector.nextElementSibling.getBoundingClientRect().top;
+            elmSelector.nextiousElementSibling.getBoundingClientRect().top;
           console.log(moveTop);
         } catch (event) {}
       }
@@ -29,9 +29,8 @@ $elm.forEach(function (item, idx) {
           console.log(moveTop);
         } catch (event) {}
       }
+      window.scrollTo({ top: moveTop, left: 0, behavior: "smooth" });
     }
-
-    window.scrollTo({ top: moveTop, left: 0 });
   });
 });
 
