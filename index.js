@@ -1,4 +1,4 @@
-const $elm = document.querySelectorAll("main > .section");
+const $elm = document.querySelectorAll(".section");
 const elmCount = $elm.length;
 
 $elm.forEach(function (item, idx) {
@@ -16,7 +16,7 @@ $elm.forEach(function (item, idx) {
         try {
           moveTop =
             window.pageYOffset +
-            elmSelector.nextiousElementSibling.getBoundingClientRect().top;
+            elmSelector.nextElementSibling.getBoundingClientRect().top;
           console.log(moveTop);
         } catch (event) {}
       }
@@ -29,8 +29,9 @@ $elm.forEach(function (item, idx) {
           console.log(moveTop);
         } catch (event) {}
       }
-      window.scrollTo({ top: moveTop, left: 0, behavior: "smooth" });
     }
+
+    window.scrollTo({ top: moveTop, left: 0 });
   });
 });
 
@@ -44,14 +45,14 @@ window.addEventListener("scroll", function () {
     $topNav.classList.add("on");
   }
 
-  $elm.forEach(function (item, idx) {
-    let $navLink = document.querySelectorAll(".gnb ");
-    if (scrollTop >= item.offsetTop) {
+  $elm.forEach(function (item2, idx2) {
+    let $navLink = document.querySelectorAll(".gnb a");
+    if (scrollTop >= item2.offsetTop - 50) {
       $navLink.forEach(function (a) {
         a.classList.remove("on");
       });
       document
-        .querySelector(`.gnb a:nth-of-type(${idx + 1})`)
+        .querySelector(`.gnb a:nth-of-type(${idx2 + 1})`)
         .classList.add("on");
     }
   });

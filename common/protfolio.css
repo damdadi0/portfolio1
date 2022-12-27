@@ -2,6 +2,9 @@
 @import url(./my_reset.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   font-family: "Noto Sans KR", sans-serif;
@@ -42,7 +45,7 @@
   background-position: right 0;
   color: transparent;
 }
-.gnb span.on {
+.gnb a.on span {
   color: #2c2c2c;
   background-image: url(../img/물결1.svg);
   background-size: 10px;
@@ -561,6 +564,10 @@
     right: 50px;
   }
 
+  .gnb span {
+    font-size: 0.5rem;
+  }
+
   .sec2 .inner {
     flex-wrap: wrap;
     /* padding-bottom: 10rem; */
@@ -682,7 +689,11 @@
     height: 100vh;
   }
 }
-
+@media (max-width: 650px) {
+  .gnb a.on span {
+    color: white;
+  }
+}
 @media (max-width: 550px) {
   /* span,
   p {
