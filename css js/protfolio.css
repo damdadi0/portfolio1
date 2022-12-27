@@ -586,7 +586,7 @@
 
 @media (max-width: 1000px) {
   .gnb {
-    right: 60px;
+    right: 50px;
   }
 
   span,
@@ -632,17 +632,25 @@
   p {
     font-size: 10px;
   }
+  */
   .gnb {
     right: 20px;
-  } */
+  }
 
-  .sec2 .inner {
-    width: 95%;
-    /* top: 100px; */
+  .gnb span {
+    /* display: none; */
+  }
+
+  .sec1 h1 {
+    font-size: 3vh;
   }
 
   .sec2 .inner .text h2 {
     margin: 10px 0;
+  }
+
+  .sec2 .inner {
+    width: 95%;
   }
 
   .sec2 .left .text {
@@ -656,6 +664,7 @@
 
   .sec2 h2 {
     font-size: 16px;
+    margin: 10px 0;
   }
 
   .sec2 span,
@@ -671,6 +680,7 @@
   .sec3 .left button {
     font-size: 10px;
     padding: 8px 6px;
+    margin-right: 7px;
   }
   /* 
   .sec3 .left {
@@ -678,30 +688,67 @@
     width: calc(100% - 4rem);
   } */
   .sec3 .left h2 {
-    font-size: 30px;
+    font-size: 40px;
+  }
+  .sec3 .left .text {
+    margin: 30px 0;
+  }
+
+  .sec3 span,
+  .sec3 strong,
+  .sec3 p {
+    font-size: 12px;
   }
 
   .sec3 .right img {
     height: auto;
-    width: 300px;
+    width: 250px;
     padding-top: 0;
+  }
+
+  .sec4 .left h2 {
+    font-size: 40px;
+  }
+  .sec4 .left .text {
+    margin: 30px 0;
+  }
+
+  .sec4 span,
+  .sec4 strong,
+  .sec4 p {
+    font-size: 12px;
   }
 
   .sec4 .left a,
   .sec4 .left button {
     font-size: 10px;
     padding: 8px 6px;
+    margin-right: 7px;
   }
 
   .sec4 .right img {
     height: auto;
-    width: 300px;
+    width: 250px;
     padding-top: 0;
+  }
+
+  .sec5 .left h2 {
+    font-size: 40px;
+  }
+
+  .sec5 .left .text {
+    margin: 30px 0;
+  }
+
+  .sec5 span,
+  .sec5 strong,
+  .sec5 p {
+    font-size: 12px;
   }
 
   .sec5 .right img {
     height: auto;
-    width: 300px;
+    width: 250px;
     padding-top: 0;
   }
 
@@ -709,5 +756,6 @@
   .sec5 .left button {
     font-size: 10px;
     padding: 8px 6px;
+    margin-right: 7px;
   }
 }
