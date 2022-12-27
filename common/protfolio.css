@@ -678,6 +678,16 @@ html {
     padding: 9px 14px;
     margin-right: 13px;
   }
+
+  .sec3 {
+    background-image: none;
+  }
+  .sec4 {
+    background-image: none;
+  }
+  .sec5 {
+    background-image: none;
+  }
 }
 
 @media (max-width: 800px) {
@@ -774,7 +784,7 @@ html {
     font-size: 40px;
   }
   .sec3 .left .text {
-    margin: 30px 0;
+    margin: 20px 0;
   }
 
   .sec3 span,
