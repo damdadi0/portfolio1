@@ -226,14 +226,39 @@ body {
   width: auto;
   margin-right: 2rem;
 }
-
+@media (max-width: 1200px) {
+  .sec1 .left button {
+    font-size: 11px;
+    padding: 0.3rem 0.5rem;
+  }
+  .sec1 .left a {
+    font-size: 10px;
+    padding: 0.3rem 0.5rem;
+  }
+}
 @media (max-width: 800px) {
+  .sec1 .left button {
+    font-size: 10px;
+    padding: 0.3rem 0.5rem;
+  }
+  .sec1 .left a {
+    font-size: 11px;
+    padding: 0.3rem 0.5rem;
+  }
+  .sec1 .left .text {
+    margin: 20px 0;
+  }
+
+  .sec2 h2 {
+    font-size: 0.8rem;
+  }
+
   .sec3 .style_3 div {
     flex-wrap: wrap;
   }
   .sec3 .style_3 div img {
     /* border: 1px solid rebeccapurple; */
-    padding: 1rem;
+    height: 90%;
   }
 
   .sec4 .web_img {

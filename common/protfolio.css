@@ -146,7 +146,7 @@ html {
 /* sec2 */
 
 .sec2 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 100vh;
   padding: 0 5vh;
   position: relative;
@@ -205,13 +205,17 @@ html {
 /* sec3 */
 
 .sec3 {
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
   height: 100vh;
   position: relative;
+  background-image: url(../img/물결\ 배경.png);
+  background-position: right 0;
+  background-repeat: no-repeat;
+  background-size: 60%;
 }
 
 .sec3 .inner {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   position: absolute;
   display: flex;
   width: 100%;
@@ -297,13 +301,17 @@ html {
 /* sec4 */
 
 .sec4 {
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
   height: 100vh;
   position: relative;
+  background-image: url(../img/물결\ 배경.png);
+  background-position: right 0;
+  background-repeat: no-repeat;
+  background-size: 60%;
 }
 
 .sec4 .inner {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   position: absolute;
   display: flex;
   width: 100%;
@@ -388,13 +396,17 @@ html {
 /* sec5 */
 
 .sec5 {
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
   height: 100vh;
   position: relative;
+  background-image: url(../img/물결\ 배경.png);
+  background-position: right 0;
+  background-repeat: no-repeat;
+  background-size: 60%;
 }
 
 .sec5 .inner {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   position: absolute;
   display: flex;
   width: 100%;
@@ -405,7 +417,7 @@ html {
 }
 
 .sec5 .left {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: block;
 }
 .sec5 .left .title {
@@ -474,7 +486,7 @@ html {
 /* sec6 */
 
 .sec6 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -554,9 +566,9 @@ html {
 }
 
 @media (max-width: 1600px) {
-  /* .gnb span {
-    display: none;
-  } */
+  .gnb {
+    right: 50px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -674,15 +686,19 @@ html {
   }
 
   .sec2 .left {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: calc(100% - 4rem);
   }
   .sec2 .left img {
   }
 
   .sec2 .right {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: calc(100% - 4rem);
+  }
+
+  .sec2 .inner .right img {
+    height: 6vh;
   }
 
   .sec5 {
@@ -691,7 +707,7 @@ html {
 }
 @media (max-width: 650px) {
   .gnb a.on span {
-    color: white;
+    color: transparent;
   }
 }
 @media (max-width: 550px) {
